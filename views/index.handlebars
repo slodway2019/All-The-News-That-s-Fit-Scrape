@@ -1,0 +1,16 @@
+<div>
+    <h4 class="card z-depth-3 center-align">Click the Read Article to Read News</h4>
+</div>
+<div class="row">
+    <div class="col s2"></div>
+    <div class="col s8 left-align">
+        {{#each article}}
+        <div class="card-panel">
+            <h6>{{this}}</h6>
+            <a href="/readArticle/{{this._id}}" class="waves-effect waves-light btn" id="btnSignUp">Read Article</a>
+
+        </div>
+
+        {{/each}}
+    </div>
+</div>
